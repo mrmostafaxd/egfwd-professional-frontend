@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/icons8-sun-48.png">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <img id="logo-img" class="logo-img" src="./images/icons8-sun-48.png" alt="sun logo">
+        <h1>Weather App</h1>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <!-- zip code input -->
+                <div class="input-container">
+                    <label for="zip">Enter Zip Code</label>
+                    <input type="text" id="zip" placeholder="enter zip code here">
+                    <p id="zip-error" class="error-text"></p>
+                </div>
+                <!-- feeling input -->
+                <div class="input-container">
+                    <label for="feelings">How are you feeling today?</label>
+                    <textarea id="feelings" placeholder="how are you feeling today"></textarea>
+                </div>
+                <div class="button-container">
+                    <button id="generate" class="generate-btn">Generate</button>
+                    <p id="generate-error" class="error-text"></p>
+                </div>
+                <!-- entries display -->
+                <div class="weather-container">
+                    <h2>Weather Info:</h2>
+                    <div id="entryHolder" class="entryHolder">
+                        <div id="date" class="entry">&nbsp;</div>
+                        <div id="temp" class="entry">&nbsp;</div>
+                        <div id="content" class="entry">&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./app.js"></script>
+</body>
+
+</html>
